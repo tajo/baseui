@@ -79,6 +79,7 @@ export type CalendarPropsT = {
   highlightDates: ?Array<Date>,
   highlightedDate: ?Date,
   includeDates: ?Array<Date>,
+  isRange: boolean,
   locale: ?LocaleT,
   maxDate: ?Date,
   minDate: ?Date,
@@ -91,7 +92,7 @@ export type CalendarPropsT = {
   onSelect: ({date: Date}) => void,
   overrides?: DatepickerOverridesT<{}>,
   peekNextMonth: boolean,
-  selected: ?Date,
+  selected: ?Date | Array<Date>,
   setActiveState: boolean => void,
 };
 
